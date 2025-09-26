@@ -1,8 +1,10 @@
+import './Game.sass'
+
 const Game = ({...props}) => {
   return ( 
     <article className="game">
-      <figure>
-        <img src={props.image} alt={props.name} />
+      <figure className="game__image">
+        <img src={props.image} alt={props.name} width="180" height="180"/>
       </figure>
       <div className="game__details">
         <h3 className="game__name">{props.name}</h3>
