@@ -55,11 +55,13 @@ hr{
   border-top: 1px solid #e0e0e0;
 }
 
-main,header,footer {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
+h4{
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-
-
+h4 span{
+    font-size: var(--text-xxl);
+}
 

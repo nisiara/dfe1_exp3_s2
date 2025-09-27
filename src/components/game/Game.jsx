@@ -1,17 +1,30 @@
 import './Game.sass'
 
-const Game = ({...props}) => {
+const Game = ({ game, addToCart }) => {
+
+  const {id, image, name, description, platform, price} = game
+
+  const handleAddToCart = () => {
+    const addedGame = {
+      id,
+      image,
+      name,
+      platform,
+      price
+    }
+    addToCart(addedGame)
+  }
+
   return ( 
     <article className="game">
-      <figure className="game__image">
-        <img src={props.image} alt={props.name} width="180" height="180"/>
-      </figure>
+      <img className="game__image" src={image} alt={name} width="148" height="148"/>
       <div className="game__details">
-        <h3 className="game__name">{props.name}</h3>
-        <p className="game__description">{props.description}</p>
-        <span className="game__platform">{props.platform}</span>
-        <b className="game__price">{props.price}</b>
-        <b className="game__price game__price--sale">{props.price}</b>
+        <h3 className="game__name">{name}</h3>
+        <p className="game__description">{description}</p>
+        <span className="game__platform">{platform}</span>
+        <b className="game__price">{price.toLocaleString('es-CL')}</b>
+        <b className="game__price game__price--sale">{price.toLocaleString('es-CL')}</b>
+        <button onClick={handleAddToCart} className="game__action">Agregar al carro</button>
       </div>
     </article>
    );
