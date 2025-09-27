@@ -6,7 +6,6 @@ const GameList = ({addToCart}) => {
 
   return ( 
     <>
-      
       <main>
         <h4><span>🕹️</span>Lista de juegos</h4>
         <div className='game-list'>
@@ -18,7 +17,7 @@ const GameList = ({addToCart}) => {
         ))}
         </div>
       </main>
-  </>
+    </>
     );
 }
  

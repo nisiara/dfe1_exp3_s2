@@ -9,7 +9,7 @@ const Header = () => {
       <img src={logo} alt="next up games" width="180" height="72" />
     </h1>
     
-    <nav>
+    {/* <nav>
       <ul>
         <li><a href="index.html" aria-current="page">Inicio</a></li>
         <li><a href="#">Ofertas</a></li>
@@ -17,7 +17,7 @@ const Header = () => {
         <li><a href="#">Accesorios</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
-    </nav>
+    </nav> */}
   </header>
   )
   
