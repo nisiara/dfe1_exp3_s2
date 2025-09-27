@@ -16,7 +16,7 @@ const Cart = () => {
             <div className="cart__items">
              
                 <div className="cart-game">
-                  <img className="cart-game__image" src="" alt="" width="64" height="64" />
+                  <img className="cart-game__image" width="64" height="64" />
                   <div className="cart-game__details">
                     <span className="cart-game__name"></span>
                     <span className="cart-game__price"></span>
