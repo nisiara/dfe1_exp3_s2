@@ -1,9 +1,14 @@
 import './Cart.sass'
 
+//En este componente necesitamos 2 props. La lista de juegos (el array del estado) y la función
+//que 'envia' el juego a eliminar al componente App donde está lo lógica para realizar esta acción
 const Cart = ({games, removeGame}) => {
 
+  //Funcion para calcular el total a pagar
   const cartTotalPrice = games.reduce((total, game) => game.salePrice + total, 0)
 
+  //Esta es la función que se ejecuta cuando el usuario pincha en el botón 'Eliminar'
+  //la cual ejecuta la función que llega del componente App a través del los props 
   function handleRemoveGame(game){
     removeGame(game)
   }
@@ -12,7 +17,7 @@ const Cart = ({games, removeGame}) => {
     <aside className="cart">
       <div>
         <h4><span>🛍️</span> Bolsa de compras <small>{games.length}</small></h4>
-         
+        {/* Renderizamos de forma condicional un mensaje o los productos presentes en la bolsa */}
         {games.length === 0 ?
           <div className="cart__message">
             <p>No hay juegos para comprar 😞. <br />Agrega juegos a la bolsa.</p>
