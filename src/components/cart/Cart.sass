@@ -1,7 +1,12 @@
 .cart
   grid-area: aside
-  border-left: 1px solid #dee5f1
-  padding: 0 40px 20px
+  @media screen and (max-width: 991px)
+    margin-top: 36px
+  @media screen and (min-width: 992px)
+    padding: 0 24px 20px
+    border-left: 1px solid #dee5f1
+
+    
   > div
     position: sticky
     top: 20px
@@ -31,6 +36,7 @@
 
 .cart-game
   display: flex
+  align-items: center
   border-radius: var(--border-md)
   padding: 0.5rem
   gap: 10px
@@ -45,7 +51,6 @@
 
 .cart-game__details
   width: 100%
-  text-align: right
   display: flex
   justify-content: center
   flex-direction: column
@@ -67,7 +72,6 @@
   font-size: var(--text-xxs)
   text-decoration: underline
   cursor: pointer
-  margin-left: auto
 
 .cart__total
   text-align: right

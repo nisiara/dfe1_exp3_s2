@@ -2,7 +2,7 @@ import './GameList.sass'
 import Game from '../game/Game';
 import games from '../../assets/data/games.js'
 
-const GameList = () => {
+const GameList = ({addGameToCart}) => {
 
   return ( 
     <>
@@ -11,11 +11,9 @@ const GameList = () => {
         <div className='game-list'>
           {
             games.map( game => {
-              return <Game key={game.id} gameObj={game}/>
+              return <Game key={game.id} gameObj={game} addToCart={addGameToCart}/>
             })
           }
-            
-    
         </div>
       </main>
     </>
