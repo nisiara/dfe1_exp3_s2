@@ -1,12 +1,11 @@
 import './Header.sass'
-import logo from '../../assets/images/logo.png'
 
 const Header = () => {
   return (
     <header>
     <h1>
       <span>next up games</span>
-      <img src={logo} alt="next up games" width="180" height="72" />
+      <img src='images/logo.png' alt="next up games" width="180" height="72" />
     </h1>
     
     {/* <nav>

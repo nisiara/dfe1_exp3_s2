@@ -6,7 +6,7 @@ export default [
     offerPrice: 29990,
     platform: "PS5 - XBox",
     description: "Un catálogo diverso de 18 luchadores. Juega con los maestros legendarios como Ryu, Chun-Li, Ken y muchos más.",
-    image: "./src/assets/images/street-fighter-6.avif",
+    image: "images/street-fighter-6.jpeg",
     tag: "featured"
   },
   {
@@ -15,7 +15,7 @@ export default [
     price: 39990,
     platform: "XBox - PC",
     description: "Compite como héroe o villano junto con un enloquecedor elenco de personajes, cada uno posee habilidades y destrezas únicas.",
-    image: "./src/assets/images/crash-team-rumble.avif",
+    image: "images/crash-team-rumble.jpeg",
     tag: "favorito"
   },
   {
@@ -25,7 +25,7 @@ export default [
     offerPrice: 24680,
     platform: "PS5 - XBox - PC",
     description: "Un joven estafador callejero, un ladrón de bancos retirado y un psicópata aterrador se meten en problemas.",
-    image: "./src/assets/images/gtav.avif",
+    image: "images/gtav.jpeg",
     tag: "best seller"
   },
   {
@@ -34,7 +34,7 @@ export default [
     price: 49990,
     platform: "PS5 - XBox - PC",
     description: "Encarna al Agente 47 en la colección definitiva del mundo del asesinato en un paquete con 20 ubicaciones emblemáticas.",
-    image: "./src/assets/images/hitman.avif",
+    image: "images/hitman.jpeg",
     tag: "featured"
   },
   {
@@ -44,7 +44,7 @@ export default [
     offerPrice: 45990,
     platform: "PS5 - XBox - PC",
     description: "Descubre el nuevo universo de Mortal Kombat, creado por el Dios del Fuego Liu Kang.",
-    image: "./src/assets/images/mortal-kombat-1.avif",
+    image: "images/mortal-kombat-1.jpeg",
     tag: "best seller"
 
   },
@@ -54,7 +54,7 @@ export default [
     price: 39990,
     platform: "PC",
     description: "Juega campañas individuales tanto para Leon Kennedy como para Claire Redfield. Nuevos rompecabezas, tramas, áreas y terroríficas nuevas sorpresas. ",
-    image: "./src/assets/images/resident-evil-2.avif",
+    image: "images/resident-evil-2.jpeg",
     tag: "best seller"
   },
   {
@@ -63,7 +63,7 @@ export default [
     price: 69990,
     platform: "PS5 - XBox - PC",
     description: "Experimenta un clase magistral de terror de supervivencia psicológica, aclamado como el mejor de su serie.",
-    image: "./src/assets/images/silent-hill-2.avif",
+    image: "images/silent-hill-2.jpeg",
     tag: "best seller"
   },
   {
@@ -73,7 +73,7 @@ export default [
     offerPrice: 29990,
     platform: "XBox - PC",
     description: "La forma definitiva de jugar la historia de Ellie y Abby, aclamada por la crítica.",
-    image: "./src/assets/images/the-last-of-us-2.avif",
+    image: "images/the-last-of-us-2.jpeg",
     tag: "featured"
   },
   {
@@ -83,7 +83,7 @@ export default [
     offerPrice: 9590,
     platform: "PS5 - XBox",
     description: "Usa un hilo de lana para balancearte de rama en rama o para engancharte a una cometa, ninguna proeza es demasiado grande.",
-    image: "./src/assets/images/unravel.avif",
+    image: "images/unravel.jpeg",
     tag: "featured"
   },
   {
@@ -92,7 +92,7 @@ export default [
     price: 59990,
     platform: "PS5 - PC",
     description: "Saga Anderson, una hábil agente del FBI con reputación de resolver casos imposibles, llega para investigar una cadena de asesinatos rituales.",
-    image: "./src/assets/images/alan-wake-2.avif",
+    image: "images/alan-wake.jpg",
     tag: "favorito"
   },
   {
@@ -101,7 +101,7 @@ export default [
     price: 39990,
     platform: "PS5 - XBox - PC",
     description: "Planifica tu ascenso a ladrón experto en una metrópolis deslumbrante y lúgubre de 1910 que combina lo industrial con la magia y la intriga.",
-    image: "./src/assets/images/thick-as-thieves.avif",
+    image: "images/thick-as-thieves.jpeg",
     tag: "favorito"
   },
   {
@@ -110,7 +110,7 @@ export default [
     price: 29990,
     platform: "PS5 - XBox - PC",
     description: "Te enfrentaras a un grupo de enemigos rebeldes en diferentes zonas conflictivas del planeta, desde Europa del Este y la Rusia rural hasta Oriente Medio.",
-    image: "./src/assets/images/call-of-duty.avif",
+    image: "images/call-of-duty.jpeg",
     tag: "best seller"
   }
 ]
