@@ -5,6 +5,7 @@ import GameList from './components/game-list/GameList'
 import Header from './components/header/Header'
 
 const App = () => {
+  
 
   /*
   La acción de agregar a la bolsa esta en el componente Game y este debe 'viajar' hacia el componente 'Cart'
@@ -16,6 +17,7 @@ const App = () => {
   └── Cart
   */
   const [cartGames, setCartGames] = useState([]);
+
 
   //Esta es la función que recupera el objeto addedGame que proviene desde el componente Game
   //Con este objeto podemos actualizar el array del estado con el nuevo producto
