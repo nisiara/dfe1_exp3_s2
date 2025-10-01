@@ -18,7 +18,6 @@ const App = () => {
   */
   const [cartGames, setCartGames] = useState([]);
 
-
   //Esta es la función que recupera el objeto addedGame que proviene desde el componente Game
   //Con este objeto podemos actualizar el array del estado con el nuevo producto
   function addGameToCart(addedGame){
@@ -42,7 +41,7 @@ const App = () => {
   return (
     <div className='app-container'>
       <Header/>
-      <GameList addGameToCart={addGameToCart}/>
+      <GameList addGameToCart={addGameToCart} cartGames={cartGames}/>
       <Cart games={cartGames} removeGame={removeGameFromCart}/>
     </div>
   )

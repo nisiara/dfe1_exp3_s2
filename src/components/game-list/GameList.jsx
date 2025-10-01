@@ -1,16 +1,21 @@
 import './GameList.sass'
 import { useEffect, useState} from 'react'
 import Game from '../game/Game';
-// import games from '../../assets/data/games.js'
 
-
-//GameList , solo recibe un prop, la cual es una función que pasa al componente Game
+//GameList recibe 2 props. 1. La función que pasa al componente Game
 //con el objetivo de recuperar el objeto que se quiere agregar al carro
-const GameList = ({addGameToCart}) => {
+//2. La lista de juegos que está en el carro, para verificar si el juego
+//a comprar ya existe en el carro.
+const GameList = ({addGameToCart, cartGames}) => {
 
+  //Agregamos el hook useState() para guardar el estado de la lista de juegos
+  //que cargaremos a través del hook useEffect()
   const[games, setGames] = useState([]);
 
+  //Usamos useEffect porque para interactuar co el estado necesitamos realizar
+  //un 'efecto secundario' que no es renderizar elementos sino, en este caso, realizar una carga asíncrona
   useEffect(() => {
+
     fetch('/data/games.json')  
       .then(response => {
         if (!response.ok) {
@@ -36,7 +41,9 @@ const GameList = ({addGameToCart}) => {
         <div className='game-list'>
           {
             games.map( game => {
-              return <Game key={game.id} gameObj={game} addToCart={addGameToCart}/>
+              //A través del metodo .find verificamos si hay coincidencias con la lista de juegos del carro y el juego que va al carrito 
+              const isInCart = cartGames.find( cartGame => cartGame.id === game.id)
+              return <Game key={game.id} gameObj={game} addToCart={addGameToCart} isInCart={isInCart}/>
             })
           }
         </div>

@@ -1,6 +1,6 @@
 import './Game.sass'
 
-const Game = ({gameObj, addToCart}) => {
+const Game = ({gameObj, addToCart, isInCart}) => {
 
   //Destructuramos el objeto con las propiedades que usaremos para renderizar este componente.
   const {id, image, name, description, platform, price, offerPrice} = gameObj
@@ -43,7 +43,7 @@ const Game = ({gameObj, addToCart}) => {
           {/* Si existe el precio de oferta, este se renderizará */}
           {offerPrice && <b className="game__price">${offerPrice.toLocaleString('es-CL')}</b>}
         </div>
-        <button onClick={handleAddToCart} className="game__action">Agregar a la bolsa</button>
+        <button onClick={handleAddToCart} className={isInCart? 'game__action game__action--selected' : 'game__action'} >{isInCart ? 'Ya estoy en la bolsa 🥳' : 'Agregar a la bolsa'}</button>
       </div>
     </article>
    );
