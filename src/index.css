@@ -7,7 +7,7 @@
   --color-primary: #6272a3;
   --color-secondary: #d4dfff;
   --color-background: #f4f8ff;
-  --color-text: #2d2d2d;
+  --color-text: #1b1b1b;
   --font-family: "Lexend Deca", sans-serif;
   --shadow: 8px 8px 20px rgba(69, 164, 242, 0.23);
   --text-xxxs: 0.5764rem;
@@ -61,15 +61,4 @@ a{
 hr{
   border: none;
   border-top: 1px solid #e0e0e0;
-}
-
-h4{
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-h4 span{
-  font-size: var(--text-xxl);
 }

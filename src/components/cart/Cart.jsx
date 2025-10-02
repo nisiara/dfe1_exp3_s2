@@ -16,7 +16,9 @@ const Cart = ({games, removeGame}) => {
   return (
     <aside className="cart">
       <div>
-        <h4><span>🛍️</span> Bolsa de compras <small>{games.length}</small></h4>
+        <div className="title">
+          <h4><span>🛍️</span> Bolsa de compras <small>{games.length}</small></h4>
+        </div>
         {/* Renderizamos de forma condicional un mensaje o los productos presentes en la bolsa */}
         {games.length === 0 ?
           <div className="cart__message">

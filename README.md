@@ -1,5 +1,5 @@
-# 🕹️ Carrito de compras para tienda NextUpGames
-Aplicación web sencilla desarrollada con React y Vite.js responsive que simula un carrito de compras básico. Permite a los usuarios explorar una lista de productos (juegos), añadirlos a una lista de compras, y visualizar el total a pagar, con la posibilidad de eliminar productos del carro.
+# 🕹️ Tienda NextUp Games
+Aplicación web sencilla desarrollada con React y Vite.js, responsive que simula un carrito de compras básico. Permite a los usuarios explorar una lista de productos (juegos), añadirlos a una lista de compras, y visualizar el total a pagar, con la posibilidad de eliminar productos del carro.
 
 ## 🚀 Demo
 Puedes ver la aplicación en funcionamiento aquí:
@@ -11,8 +11,9 @@ Puedes ver la aplicación en funcionamiento aquí:
 
 * **Catálogo de Juegos**: Explora una selección de títulos con información relevante como título, plataforma, descripción y precios.
 * **Diseño Responsive**: La interfaz se adapta perfectamente a cualquier dispositivo (móvil, tablet, escritorio).
-* **Agregar a la Bolsa de Compras**: Permite a los usuarios seleccionar un producto y agregarlo a su lista de compras con un solo click.
-* **Control de Estado**: Una vez añadido, el botón cambia de 'Agregar al carro' a 'Ya estoy en el carro' para evitar que se agregue el mismo juego dos veces.
+* **Selección de vista**: El catálogo tiene dos modos de visualización: Tipo Grilla y Tipo Columna.
+* **Agregar a la Bolsa de Compras**: Permite a los usuarios seleccionar un producto y agregarlo a la bolsa de compras con un solo click.
+* **Control de Estado**: Una vez añadido un juego a la bolsa, el botón cambia de estado para evitar que se agregue el mismo juego dos veces.
 * **Renderizado Condicional**: Dependiendo del estado que maneja la bolsa de compras, muestra un mensaje o la lista de productos.
 * **Cálculo de Total**: El carrito calcula y muestra el monto total a pagar sumando los precios de todos los productos.
 * **Eliminar Juegos**: Permite a los usuarios remover juegos individualmente del carrito en cualquier momento.

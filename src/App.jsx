@@ -3,6 +3,7 @@ import './App.sass'
 import Cart from './components/cart/Cart'
 import GameList from './components/game-list/GameList'
 import Header from './components/header/Header'
+import ChangeLayout from './components/change-layout/ChangeLayout'
 
 const App = () => {
   
@@ -41,7 +42,7 @@ const App = () => {
   return (
     <div className='app-container'>
       <Header/>
-      <GameList addGameToCart={addGameToCart} cartGames={cartGames}/>
+      <GameList addGameToCart={addGameToCart} cartGames={cartGames} />
       <Cart games={cartGames} removeGame={removeGameFromCart}/>
     </div>
   )

@@ -79,3 +79,31 @@
     box-shadow: none
     color: var(--color-text)
 
+.game-list--row
+  .game
+    display: flex
+    flex-basis: calc(100% - 1rem)
+    @media screen and ( min-width: 767px )
+      flex-basis: calc(50% - 1rem)
+      
+  .game__image
+    margin: 0
+    width: 110px
+    height: 110px
+  .game__details
+    width: 100%
+    padding: 0 1rem
+  .game__name
+    height: auto
+  .game__description
+    display: none
+  .game__prices-container
+    height: auto
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+    margin: 0
+    gap: 8px
+  .game__action
+    
+    padding: .5rem

@@ -1,12 +1,14 @@
 import './GameList.sass'
 import { useEffect, useState} from 'react'
 import Game from '../game/Game';
+import ChangeLayout from '../change-layout/ChangeLayout';
 
 //GameList recibe 2 props. 1. La función que pasa al componente Game
 //con el objetivo de recuperar el objeto que se quiere agregar al carro
 //2. La lista de juegos que está en el carro, para verificar si el juego
 //a comprar ya existe en el carro.
 const GameList = ({addGameToCart, cartGames}) => {
+
 
   //Agregamos el hook useState() para guardar el estado de la lista de juegos
   //que cargaremos a través del hook useEffect()
@@ -41,13 +43,24 @@ const GameList = ({addGameToCart, cartGames}) => {
 
   }, [])
 
+  const [currentLayout, setCurrentLayout] = useState('grid');
+
+  function handleLayoutChange(layout){
+      console.log('layout', layout)
+    setCurrentLayout(layout)
+  }
+
 
   //Retorna el jsx que se encarga de renderizar la lista de juegos.
   return ( 
     <>
       <main>
-        <h4><span>🕹️</span>Lista de juegos</h4>
-        <div className='game-list'>
+        <div className='title'>
+          <h4><span>🕹️</span>Lista de juegos</h4>
+          <ChangeLayout changeLayout={handleLayoutChange} currentLayout={currentLayout}/>
+        </div>
+        <div className={currentLayout === 'grid' ? 'game-list' : 'game-list game-list--row'}>
+        
           {
             games.map( game => {
               //A través del metodo .find verificamos si hay coincidencias con la lista de juegos del carro y el juego que va al carrito 
@@ -58,7 +71,7 @@ const GameList = ({addGameToCart, cartGames}) => {
         </div>
       </main>
     </>
-    );
+  );
 }
  
 export default GameList;
