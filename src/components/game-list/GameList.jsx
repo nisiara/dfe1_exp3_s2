@@ -15,8 +15,10 @@ const GameList = ({addGameToCart, cartGames}) => {
   //Usamos useEffect porque para interactuar co el estado necesitamos realizar
   //un 'efecto secundario' que no es renderizar elementos sino, en este caso, realizar una carga asíncrona
   useEffect(() => {
+    const controller = new AbortController();
+    const signal = controller.signal;
 
-    fetch('/data/games.json')  
+    fetch('/data/games.json', {signal: signal})  
       .then(response => {
         if (!response.ok) {
           throw new Error('Falló la carga de la API');
@@ -30,6 +32,13 @@ const GameList = ({addGameToCart, cartGames}) => {
       .catch(error => {
         console.error('Error', error.message);
       });
+
+    //Agregamos la función de retorno para limpiar useEffect y no existam 'memory leaks'
+    //mejorando el rendimiento
+    return () => {
+      controller.abort();
+    }
+
   }, [])
 
 
