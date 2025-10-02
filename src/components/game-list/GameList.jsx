@@ -43,13 +43,13 @@ const GameList = ({addGameToCart, cartGames}) => {
 
   }, [])
 
+  //Agregamos el estado para cambiar la visualización de la vista, entre tipo grilla y tipo fila.
   const [currentLayout, setCurrentLayout] = useState('grid');
 
+  //Recibimos el tipo de vista y la seteamos en el state.
   function handleLayoutChange(layout){
-      console.log('layout', layout)
     setCurrentLayout(layout)
   }
-
 
   //Retorna el jsx que se encarga de renderizar la lista de juegos.
   return ( 
@@ -60,7 +60,6 @@ const GameList = ({addGameToCart, cartGames}) => {
           <ChangeLayout changeLayout={handleLayoutChange} currentLayout={currentLayout}/>
         </div>
         <div className={currentLayout === 'grid' ? 'game-list' : 'game-list game-list--row'}>
-        
           {
             games.map( game => {
               //A través del metodo .find verificamos si hay coincidencias con la lista de juegos del carro y el juego que va al carrito 
