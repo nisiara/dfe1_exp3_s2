@@ -4,7 +4,7 @@ Aplicación web sencilla desarrollada con React y Vite.js, responsive que simula
 ## 🚀 Demo
 Puedes ver la aplicación en funcionamiento aquí:
 
-🔗 [Github Pages](https://nisiara.github.io/dfe1_exp3_s1/)
+🔗 [Github Pages](https://nisiara.github.io/dfe1_exp3_s2/)
 
 
 ## ✨ Características Principales
