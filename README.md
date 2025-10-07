@@ -33,7 +33,7 @@ Sigue estos pasos para obtener una copia local del proyecto en funcionamiento.
 
 ### Prerrequisitos
 
-Necesitas tener instalado **[Bun](https://bun.com/)** en tu sistema.
+Utilizamos **[Bun](https://bun.com/)** para crear este proyecto.
 
 ### Pasos
 
@@ -60,7 +60,7 @@ Necesitas tener instalado **[Bun](https://bun.com/)** en tu sistema.
 
 
 ## ✍️ Autor
-nisiara - Desarrollador/a principal.
+Nicolás Silva A.
 
 
 
